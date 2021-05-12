@@ -59,7 +59,7 @@ document.getElementById("click_about").addEventListener("click",function(){
 // Click Work
 document.getElementById("click_work_").addEventListener("click",function(){
     aboutContainer.setAttribute("style", "display: none");
-    work_Container.setAttribute("style", "display: initial");
+    work_Container.setAttribute("style", "display: flex");
     reposContainer.setAttribute("style", "display: none");
     contaContainer.setAttribute("style", "display: none");
 });

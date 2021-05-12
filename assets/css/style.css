@@ -6,11 +6,26 @@
     --colorFontSecondary: rgb(255, 201, 101);
 }
 
+a, p, h1, h2, h3, h4, h5, h6 {
+    color: var(--colorFontPrimary);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+a:hover {
+    color: var(--colorFontSecondary);
+    transition: color 120ms linear;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--colorBackground);
 }
 
 header {
@@ -19,16 +34,13 @@ header {
 }
 
 header h1 {
-    padding: 0 1em;
+    padding: 0.75em 1em;
 }
 
 #a_display {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.container {
     max-width: 1024px;
 }
 
@@ -45,14 +57,26 @@ header h1 {
     width: 10em;
 }
 
+#about p {
+    margin: 0 2em;
+    line-height: 1.25em;
+}
+
 /* Projects Div */
+
+#project {
+    display: flex;
+    flex-direction: row;
+    max-height: 10em;
+    overflow: auto;
+}
 
 #project div {
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
-    width: 400px;
-    height: 10rem;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 8rem;
 
     margin: 1rem;
     padding: 1rem;
@@ -64,17 +88,15 @@ header h1 {
     background-size: cover;
 }
 
-#proj1 {
-    background-image: url(../images/QuizGame.gif);
-}
+#project div h2, #project div a {
+    display: inline-block;
+    line-height: 1.25em;
+    text-shadow: 0 0 2px #000000, 0 0 4px #000000, 0 0 8px #000000, 0 0 10px #000000, 0 0 12px #000000;
+} 
 
-#proj2 {
-    background-image: url(../images/trail-scout.gif);
-}
-
-#proj3 {
-    background-image: url(../images/shutterstock_1072726052.jpg);
-}
+#proj1 {background-image: url(../images/QuizGame.gif);}
+#proj2 {background-image: url(../images/trail-scout.gif);}
+#proj3 {background-image: url(../images/shutterstock_1072726052.jpg);}
 
 /* Contact Div */
 
@@ -87,19 +109,17 @@ header h1 {
     height: 10em;
     width: 10em;
     background-size: cover;
+
+    margin: 0 1em;
 }
 
-#email {
-    background-image: url(../images/iconfinder_Email_4550857.png);
-}
+#email {background-image: url(../images/iconfinder_Email_4550857.png);}
 
-#linkd {
-    background-image: url(../images/iconfinder_linkedin_291709.png);
-}
+#linkd {background-image: url(../images/iconfinder_linkedin_291709.png);}
 
 #githb {
     background-image: url(../images/iconfinder_github_291716.png);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
 }
 
 #resum {
@@ -110,6 +130,11 @@ header h1 {
 }
 
 /* Repos Div */
+
+#repos {
+    max-height: 10em;
+    overflow: auto;
+}
 
 #repos a {
     display: block;
