@@ -12,6 +12,11 @@ a, p, h2, h3, h4, h5, h6 {
     user-select: none;
 }
 
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    user-select: none;
+}
+
 a:hover, header h1:hover {
     color: var(--colorFontSecondary);
     transition: color 120ms linear;
@@ -29,12 +34,10 @@ a:link, a:visited {
 
 .not-selected {
     color: var(--colorFontPrimary);
-    user-select: none;
 }
 
 .selected {
     color: var(--colorFontSecondary);
-    user-select: none;
 }
 
 /* Main Containers */
