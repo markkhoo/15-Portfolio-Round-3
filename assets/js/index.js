@@ -54,6 +54,10 @@ document.getElementById("click_about").addEventListener("click",function(){
     work_Container.setAttribute("style", "display: none");
     reposContainer.setAttribute("style", "display: none");
     contaContainer.setAttribute("style", "display: none");
+    document.getElementById("click_about").setAttribute("class", "selected");
+    document.getElementById("click_work_").setAttribute("class", "not-selected");
+    document.getElementById("click_repos").setAttribute("class", "not-selected");
+    document.getElementById("click_conta").setAttribute("class", "not-selected");
 });
 
 // Click Work
@@ -62,6 +66,10 @@ document.getElementById("click_work_").addEventListener("click",function(){
     work_Container.setAttribute("style", "display: flex");
     reposContainer.setAttribute("style", "display: none");
     contaContainer.setAttribute("style", "display: none");
+    document.getElementById("click_about").setAttribute("class", "not-selected");
+    document.getElementById("click_work_").setAttribute("class", "selected");
+    document.getElementById("click_repos").setAttribute("class", "not-selected");
+    document.getElementById("click_conta").setAttribute("class", "not-selected");
 });
 
 // Click Github Repos
@@ -70,6 +78,10 @@ document.getElementById("click_repos").addEventListener("click",function(){
     work_Container.setAttribute("style", "display: none");
     reposContainer.setAttribute("style", "display: initial");
     contaContainer.setAttribute("style", "display: none");
+    document.getElementById("click_about").setAttribute("class", "not-selected");
+    document.getElementById("click_work_").setAttribute("class", "not-selected");
+    document.getElementById("click_repos").setAttribute("class", "selected");
+    document.getElementById("click_conta").setAttribute("class", "not-selected");
 });
 
 // Click Contact
@@ -78,4 +90,8 @@ document.getElementById("click_conta").addEventListener("click",function(){
     work_Container.setAttribute("style", "display: none");
     reposContainer.setAttribute("style", "display: none");
     contaContainer.setAttribute("style", "display: flex");
+    document.getElementById("click_about").setAttribute("class", "not-selected");
+    document.getElementById("click_work_").setAttribute("class", "not-selected");
+    document.getElementById("click_repos").setAttribute("class", "not-selected");
+    document.getElementById("click_conta").setAttribute("class", "selected");
 });
