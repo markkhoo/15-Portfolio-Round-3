@@ -1,14 +1,30 @@
 // Pointers
-var aboutContainer = document.getElementById("about");
-var work_Container = document.getElementById("project");
-var reposContainer = document.getElementById("repos");
-var contaContainer = document.getElementById("contact");
+const aboutContainer = document.getElementById("about");
+const work_Container = document.getElementById("project");
+const reposContainer = document.getElementById("repos");
+const contaContainer = document.getElementById("contact");
+const nameSpan = document.getElementById("my-name");
+const timeSince = document.getElementById("time-since");
 
 // Global Variables
+const myName = ["", "M", "Ma", "Mar", "Mark", "Mark ", "Mark K", "Mark Kh", "Mark Kho", "Mark Khoo"];
+let nameTime = 0;
 
+// Name Animation
+var animate = setInterval(function() {
+    if(nameTime < myName.length) {
+        nameSpan.innerHTML = myName[nameTime];
+    } else if (nameTime >= 10) {
+        document.getElementById("right").innerHTML ="_";
+    };
+    if (nameTime > 13) {
+        document.getElementById("right").innerHTML ="";
+        clearInterval(animate);
+    };
+    nameTime += 1;
+}, randInt(75, 200));
 
 // Display for time since started coding
-let timeSince = document.getElementById("time-since");
 setInterval(function() {
     let time = dayjs().diff(dayjs(1615262400000),'day',true); // Days since March 8, 2020
     timeSince.innerText = time.toString().substring(0,10);
@@ -95,3 +111,7 @@ document.getElementById("click_conta").addEventListener("click",function(){
     document.getElementById("click_repos").setAttribute("class", "not-selected");
     document.getElementById("click_conta").setAttribute("class", "selected");
 });
+
+function randInt(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
