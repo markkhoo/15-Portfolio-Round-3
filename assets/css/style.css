@@ -6,17 +6,30 @@
     --colorFontSecondary: rgb(255, 201, 101);
 }
 
-.container {
-    max-width: 1024px;
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    padding: 0 1em;
 }
 
 #a_display {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
+.container {
+    max-width: 1024px;
+}
+
+/* About Me Div */
 
 #about {
     display: flex;
+    align-items: center;
 }
 
 #about img {
@@ -24,6 +37,10 @@
     height: 10em;
     width: 10em;
 }
+
+/* Projects Div */
+
+
 
 /* Contact Div */
 
