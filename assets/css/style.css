@@ -26,6 +26,7 @@ a:hover, header h1:hover {
 a:active, header h1:active {
     color: white;
     text-shadow: 2px 2px var(--colorFontSecondary);
+    transition: all 120ms linear;
 }
 
 a:link, a:visited {
