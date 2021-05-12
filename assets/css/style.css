@@ -6,6 +6,13 @@
     --colorFontSecondary: rgb(255, 201, 101);
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -40,7 +47,34 @@ header h1 {
 
 /* Projects Div */
 
+#project div {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 400px;
+    height: 10rem;
 
+    margin: 1rem;
+    padding: 1rem;
+
+    border: 0.5rem solid rgb(24, 24, 24);
+    border-radius: 1rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#proj1 {
+    background-image: url(../images/QuizGame.gif);
+}
+
+#proj2 {
+    background-image: url(../images/trail-scout.gif);
+}
+
+#proj3 {
+    background-image: url(../images/shutterstock_1072726052.jpg);
+}
 
 /* Contact Div */
 
