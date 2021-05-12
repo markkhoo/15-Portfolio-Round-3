@@ -1,0 +1,74 @@
+:root {
+    --colorBackground: rgb(25, 30, 34);
+    --colorSecondary: rgba(112, 128, 144, 0.1);
+    --colorButtonHover: rgba(112, 128, 144, 0.25);
+    --colorFontPrimary: #fff;
+    --colorFontSecondary: rgb(255, 201, 101);
+}
+
+.container {
+    max-width: 1024px;
+}
+
+#a_display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about {
+    display: flex;
+}
+
+#about img {
+    border-radius: 100%;
+    height: 10em;
+    width: 10em;
+}
+
+/* Contact Div */
+
+#contact {
+    display: flex;
+}
+
+#contact a {
+    border-radius: 100%;
+    height: 10em;
+    width: 10em;
+    background-size: cover;
+}
+
+#email {
+    background-image: url(../images/iconfinder_Email_4550857.png);
+}
+
+#linkd {
+    background-image: url(../images/iconfinder_linkedin_291709.png);
+}
+
+#githb {
+    background-image: url(../images/iconfinder_github_291716.png);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#resum {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Repos Div */
+
+#repos a {
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--colorSecondary);
+    border-radius: 1rem;
+}
+
+#repos a:hover {
+    background-color: var(--colorButtonHover);
+    transition: all 120ms linear;
+}
