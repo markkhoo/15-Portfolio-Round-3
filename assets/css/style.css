@@ -112,6 +112,11 @@ header h1 {
     text-shadow: 0 0 2px #000000, 0 0 4px #000000, 0 0 8px #000000, 0 0 10px #000000, 0 0 12px #000000;
 }
 
+#project div h2 {
+    font-size: 125%;
+    padding: 0 0 0.5em 0;
+}
+
 #proj1 {background-image: url(../images/QuizGame.gif);}
 #proj2 {background-image: url(../images/trail-scout.gif);}
 #proj3 {background-image: url(../images/shutterstock_1072726052.jpg);}
@@ -172,7 +177,7 @@ header h1 {
     width: 100%;
     z-index: -1;
 }
-    /* https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 */
+/*Code from Daniel Österman: https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 */
 .parallax>use {
     animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
