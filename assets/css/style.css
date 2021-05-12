@@ -18,6 +18,11 @@ a:hover, header h1:hover {
     cursor: pointer;
 }
 
+a:active, header h1:active {
+    color: white;
+    text-shadow: 2px 2px var(--colorFontSecondary);
+}
+
 a:link, a:visited {
     text-decoration: none;
 }
