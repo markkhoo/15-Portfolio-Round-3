@@ -67,6 +67,7 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1024px;
+    padding: 0 1em;
 }
 
 /* About Me Div */
@@ -223,8 +224,32 @@ header h1 {
     #a_display {
         flex-direction: column;
     }
+    #about img {
+        height: 8em;
+        width: 8em;
+    }
     #project {
         flex-direction: column;
         max-height: auto;
+    }
+    #contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contact a {
+        height: 8em;
+        width: 8em;
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+    #about p {
+        padding: 1em;
     }
 }
