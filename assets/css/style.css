@@ -67,7 +67,7 @@ header h1 {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1024px;
-    padding: 0 1em;
+    margin: 0 1em;
 }
 
 /* About Me Div */
